@@ -61,8 +61,6 @@ jobs:
         env:
           PYTHONFORANDROID_PREREQUISITES_INSTALL_INTERACTIVE: "0"
         run: |
-          # Čiščenje prejšnjih poskusov gradnje znotraj projekta
-          buildozer android clean
           buildozer -v android debug
 
       - name: Upload APK
