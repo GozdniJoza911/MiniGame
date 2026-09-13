@@ -36,10 +36,10 @@ fullscreen = 0
 android.accept_sdk_license = True
 
 # Android API level
-android.api = 35
+android.api = 34
 
 # Minimum Android API level
-android.minapi = 23
+android.minapi = 24
 
 # Android NDK version
 android.ndk = 28c
