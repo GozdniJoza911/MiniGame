@@ -1,20 +1,37 @@
 [app]
 
+# (str) Title of your application
 title = MiniGame
+
+# (str) Package name
 package.name = minigame
-package.domain = org.minigame
 
+# (str) Package domain
+package.domain = org.gozdnijoza
+
+# (str) Source code where main.py lives
 source.dir = .
-source.include_exts = py,png,jpg,kv,atlas
 
-version = 0.1
+# (str) Main filename
+source.main = main.py
 
+# (str) Application version
+version = 1.0
+
+# (list) Application requirements
 requirements = python3,kivy
 
+# (str) Supported orientation
 orientation = portrait
 
+# (bool) Fullscreen
 fullscreen = 0
 
-android.minapi = 24
-android.api = 34
-android.archs = arm64-v8a
+
+[buildozer]
+
+# (str) Log level
+log_level = 2
+
+# (str) Warning for root
+warn_on_root = 1
