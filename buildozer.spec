@@ -28,6 +28,29 @@ orientation = portrait
 fullscreen = 0
 
 
+# -------------------------
+# Android configuration
+# -------------------------
+
+# Accept Android SDK licenses automatically
+android.accept_sdk_license = True
+
+# Android API level
+android.api = 35
+
+# Minimum Android API level
+android.minapi = 23
+
+# Android NDK version
+android.ndk = 28c
+
+# Architecture
+android.archs = arm64-v8a
+
+# Android app permissions
+android.permissions = INTERNET
+
+
 [buildozer]
 
 # (str) Log level
