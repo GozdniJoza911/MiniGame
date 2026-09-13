@@ -39,7 +39,7 @@ android.accept_sdk_license = True
 android.api = 34
 
 # Minimum Android API level
-android.minapi = 24
+android.minapi = 20
 
 # Android NDK version
 android.ndk = 28c
