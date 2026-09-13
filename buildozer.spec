@@ -35,14 +35,14 @@ fullscreen = 0
 # Accept Android SDK licenses automatically
 android.accept_sdk_license = True
 
-# Android API level
+# Nastavite ciljni API na 34 (zahteva Google Play)
 android.api = 34
 
-# Minimum Android API level
-android.minapi = 20
+# Nastavite minimalni API na vsaj 21 ali 24 (odpravi napako prevajalnika)
+android.minapi = 24
 
-# Android NDK version
-android.ndk = 28c
+# Nastavite NDK API prav tako na vsaj 24
+android.ndk_api = 24
 
 # Architecture
 android.archs = arm64-v8a
