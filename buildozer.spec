@@ -17,4 +17,4 @@ fullscreen = 0
 
 android.minapi = 24
 android.api = 34
-android.arch = arm64-v8a
+android.archs = arm64-v8a
