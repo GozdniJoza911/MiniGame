@@ -1,6 +1,9 @@
 name: Build Android APK
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -8,19 +11,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Accept Android SDK licenses
-        run: |
-          yes | sdkmanager --licenses || true
 
       - name: Build APK
         uses: ArtemSBulgakov/buildozer-action@v1
         with:
-          workdir: .
-          buildozer_version: master
           command: buildozer android debug
+          workdir: .
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
